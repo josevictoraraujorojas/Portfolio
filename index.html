@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <!-- Define o conjunto de caracteres para UTF-8, garantindo compatibilidade com a maioria dos idiomas -->
+    <meta charset="UTF-8" />
+    <!-- Configura o site para ser responsivo em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título exibido na aba do navegador -->
+    <title>Portifólio de Projetos</title>
+    <!-- Link para o arquivo CSS local -->
+    <link rel="stylesheet" href="css/estilo.css" />
+    <!-- Importação da biblioteca de ícones Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Logotipo e título do portfólio -->
+      <div id="logo">
+        <img src="img/Figure-Header.png" class="icone-portfolio" alt="" />
+        <p>Meu Portfolio</p>
+      </div>
+      <!-- Botão para menu hamburguer em dispositivos móveis -->
+      <button id="hamburguer">
+        <i class="fa-solid fa-bars" style="color: #ffffff"></i>
+      </button>
+      <!-- Menu de navegação principal -->
+      <nav id="menu">
+        <ul>
+          <li>
+            <a href="#sobre-mim" class="link">Sobre</a>
+          </li>
+          <li>
+            <a href="#minhas-habilidades" class="link">Habilidades</a>
+          </li>
+          <li>
+            <a href="#meus-projetos" class="link">Projetos</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Script JS local para funcionalidades -->
+      <script src="js/javascript.js"></script>
+    </header>
+
+    <!-- Menu hamburguer para telas menores -->
+    <section id="menu-hamburguer">
+      <nav>
+        <ul>
+          <li>
+            <a href="#sobre-mim" class="link">Sobre</a>
+          </li>
+          <li>
+            <a href="#minhas-habilidades" class="link">Habilidades</a>
+          </li>
+          <li>
+            <a href="#meus-projetos" class="link">Projetos</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <main>
+      <!-- Seção Sobre Mim -->
+      <section id="sobre-mim">
+        <div id="texto">
+          <h1>
+            <strong class="especial">Desenvolvedor WEB </strong> criando sempre
+            uma nova solução
+          </h1>
+          <p class="descrição">
+            Olá! Sou José Victor Araújo Rojas, estudante do 4º período de
+            Sistemas de Informação e desenvolvedor front-end. Estou aprimorando
+            minhas habilidades em HTML, CSS, JavaScript e Angular.
+          </p>
+          <!-- Botão que direciona para o perfil no LinkedIn -->
+          <a
+            id="linkedin"
+            href="https://www.linkedin.com/in/jose-victor-rojas/"
+            target="_blank"
+            ><button>Linkedin</button>
+          </a>
+        </div>
+        <!-- Imagem do autor -->
+        <figure id="imagem-sobre-mim">
+          <img id="minha-foto" src="img/minha-foto.jpeg" alt="" />
+        </figure>
+      </section>
+
+      <!-- Seção Minhas Habilidades -->
+      <section id="minhas-habilidades">
+        <h1 id="titulo-minhas-habilidades">
+          Minhas <strong class="especial">Habilidades</strong>
+        </h1>
+        <p class="descrição">
+          Sou apaixonado por criar experiências web dinâmicas e responsivas,
+          aqui estão algumas das habilidades que desenvolvi ao longo do meu
+          caminho:
+        </p>
+        <ul id="lista-habilidades">
+          <!-- Habilidade HTML -->
+          <li class="habilidades">
+            <figure>
+              <img class="img-habilidades" src="img/icone-html.png" alt="" />
+            </figure>
+            <h3>HTML 5</h3>
+            <div class="barra-porcentagem">
+              <strong>80%</strong>
+              <div>
+                <div></div>
+              </div>
+            </div>
+            <p class="descrição">
+              Compreendo a estrutura básica de páginas web, utilizando HTML para
+              criar conteúdos acessíveis e bem organizados.
+            </p>
+          </li>
+          <!-- Habilidade CSS -->
+          <li class="habilidades">
+            <figure>
+              <img class="img-habilidades" src="img/icone-css.png" alt="" />
+            </figure>
+            <h3>CSS</h3>
+            <div class="barra-porcentagem">
+              <strong>80%</strong>
+              <div>
+                <div></div>
+              </div>
+            </div>
+            <p class="descrição">
+              Utilizo CSS para dar vida às minhas criações, aplicando estilos
+              modernos e responsivos.
+            </p>
+          </li>
+          <!-- Habilidade JavaScript -->
+          <li class="habilidades">
+            <figure>
+              <img
+                class="img-habilidades"
+                src="img/icone-javascript.png"
+                alt=""
+              />
+            </figure>
+            <h3>JavaScript</h3>
+            <div class="barra-porcentagem">
+              <strong>80%</strong>
+              <div>
+                <div></div>
+              </div>
+            </div>
+            <p class="descrição">
+              Minha experiência com JavaScript me permite adicionar
+              interatividade às páginas, criando experiências envolventes para
+              os usuários.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Seção Meus Projetos -->
+      <section id="meus-projetos">
+        <h1>Meus <strong class="especial">projetos</strong></h1>
+
+        <p class="descrição">
+          Nesta seção, apresento alguns dos projetos que desenvolvi, refletindo
+          minha paixão por criar soluções web inovadoras. Cada um deles
+          representa uma oportunidade de aprendizado e crescimento na minha
+          jornada como desenvolvedor. Confira:
+        </p>
+
+        <ul>
+          <li>
+            <figure>
+              <img src="" alt="" />
+            </figure>
+            <h3>Site pessoal</h3>
+            <p class="descrição">
+              Um espaço que expressa minha identidade, onde compartilho minhas
+              experiências, habilidades e conquistas. O site é responsivo e foi
+              projetado para proporcionar uma navegação intuitiva.
+            </p>
+            <a href="">projeto no github</a>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+            </figure>
+            <h3>Site de eventos</h3>
+            <p class="descrição">
+              Desenvolvi uma plataforma para promover eventos, permitindo que os
+              usuários se inscrevam e acompanhem todas as informações
+              relevantes. A interface é atraente e funcional, facilitando a
+              interação dos participantes.
+            </p>
+            <a href="">projeto no github</a>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+            </figure>
+            <h3>Site de loja</h3>
+            <p class="descrição">
+              Criei um e-commerce com foco em uma experiência de compra fluida e
+              eficiente. O design é otimizado para conversões, e implementei
+              funcionalidades que garantem segurança e facilidade na navegação.
+            </p>
+            <a href="">projeto no github</a>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+            </figure>
+            <h3>Calculadora</h3>
+            <p class="descrição">
+              Criei um e-commerce com foco em uma experiência de compra fluida e
+              eficiente. O design é otimizado para conversões, e implementei
+              funcionalidades que garantem segurança e facilidade na navegação.
+            </p>
+            <a href="">projeto no github</a>
+          </li>
+          <li>
+            <figure>
+              <img src="" alt="" />
+            </figure>
+            <h3>Jogo</h3>
+            <p class="descrição">
+              Criei um e-commerce com foco em uma experiência de compra fluida e
+              eficiente. O design é otimizado para conversões, e implementei
+              funcionalidades que garantem segurança e facilidade na navegação.
+            </p>
+            <a href="">projeto no github</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

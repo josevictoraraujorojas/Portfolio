@@ -1,0 +1,521 @@
+body {
+  background-color: black; /* Define o fundo preto para toda a página */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; /* Configura uma família de fontes modernas e legíveis */
+}
+
+section {
+  padding-top: 3.5rem; /* Adiciona espaçamento superior para evitar sobreposição com o header fixo */
+}
+
+header {
+  width: 100%; /* Garante que o header ocupe toda a largura da tela */
+  position: fixed; /* Mantém o header fixo no topo da página, mesmo ao rolar */
+  top: 0; /* Posiciona o header no topo */
+  left: 0; /* Garante alinhamento à esquerda */
+  z-index: 1000; /* Garante que o header esteja acima de outros elementos */
+  color: white; /* Define a cor do texto como branca */
+  display: flex; /* Utiliza layout flexível para facilitar alinhamento dos itens */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  background-color: black; /* Torna o fundo do header preto */
+}
+
+#logo {
+  display: flex; /* Aplica layout flexível ao logo */
+  align-items: center; /* Centraliza verticalmente o conteúdo do logo */
+  font-size: 2rem; /* Aumenta o tamanho da fonte do logo para maior destaque */
+}
+
+#hamburguer {
+  display: none; /* Oculta o botão hamburguer por padrão (aparecerá em telas menores) */
+  background-color: black; /* Define fundo preto para o botão */
+  border: 0; /* Remove as bordas padrão do botão */
+}
+
+#logo:hover {
+  cursor: default; /* Desabilita qualquer mudança de cursor ao passar o mouse sobre o logo */
+}
+
+header,
+nav {
+  justify-content: space-around; /* Garante que os itens no header/nav estejam espaçados uniformemente */
+}
+
+header,
+nav,
+ul {
+  list-style: none; /* Remove os marcadores padrão das listas */
+  display: flex; /* Aplica layout flexível aos elementos */
+  gap: 1.2rem; /* Adiciona espaçamento uniforme entre os itens */
+  align-items: center; /* Centraliza verticalmente os itens dentro do container */
+}
+
+.link {
+  text-decoration: none; /* Remove sublinhado padrão dos links */
+  color: #fff; /* Define a cor branca para os links */
+  font-size: 18px; /* Define um tamanho de fonte legível */
+  position: relative; /* Permite o uso de posicionamento relativo para elementos filhos */
+}
+
+.link:hover {
+  color: gray; /* Altera a cor do link para cinza ao passar o mouse */
+  text-decoration: underline; /* Adiciona sublinhado ao link ao passar o mouse */
+  transition: 0.5s ease; /* Suaviza a transição do efeito hover */
+}
+
+#menu-hamburguer {
+  display: none; /* Oculta o menu hamburguer por padrão */
+  width: 100%; /* Garante que o menu ocupe toda a largura da tela */
+  position: fixed; /* Fixa o menu na tela */
+  top: 0; /* Posiciona o menu no topo */
+  left: 0; /* Alinha o menu à esquerda */
+  z-index: 999; /* Define a prioridade de renderização para aparecer abaixo do header */
+  color: white; /* Define a cor do texto como branca */
+  align-items: center; /* Centraliza verticalmente os itens dentro do menu */
+  background-color: black; /* Define o fundo preto para o menu */
+}
+
+#menu-hamburguer nav {
+  width: 100%; /* Garante que o conteúdo do menu ocupe toda a largura */
+  display: flex; /* Aplica layout flexível */
+  flex-direction: column; /* Alinha os itens em coluna */
+}
+
+#menu-hamburguer ul {
+  width: 100%; /* Garante que a lista ocupe toda a largura */
+  display: flex; /* Aplica layout flexível */
+  flex-direction: column; /* Organiza os itens da lista em coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+#menu-hamburguer li {
+  text-align: center; /* Centraliza o texto dentro dos itens da lista */
+}
+
+.icone-portfolio {
+  width: 40px; /* Define largura fixa para os ícones */
+  height: 35px; /* Define altura fixa para os ícones */
+}
+
+#sobre-mim {
+  color: #fff; /* Define o texto como branco */
+  display: flex; /* Aplica layout flexível */
+  margin-left: auto; /* Centraliza horizontalmente o container */
+  margin-right: auto; /* Centraliza horizontalmente o container */
+  width: 80%; /* Define a largura como 80% da tela */
+  height: 100vh; /* Garante que o container ocupe a altura total da tela */
+}
+
+#texto {
+  display: flex; /* Aplica layout flexível */
+  flex-direction: column; /* Alinha os itens verticalmente */
+  font-size: 3rem; /* Define o tamanho da fonte como grande para destaque */
+}
+
+.especial {
+  color: #640d5f; /* Aplica uma cor personalizada (rosa escuro) para destacar elementos */
+}
+
+.descrição {
+  color: rgb(
+    177,
+    179,
+    179
+  ); /* Define uma cor cinza claro para os textos de descrição */
+  font-size: 1.2rem; /* Define o tamanho da fonte ligeiramente maior para legibilidade */
+}
+
+#linkedin {
+  /* Nenhuma propriedade específica aqui, mas o ID pode ser estilizado futuramente */
+}
+
+#linkedin button {
+  border-radius: 20px; /* Adiciona bordas arredondadas ao botão */
+  width: 30%; /* Define a largura do botão como 30% do container pai */
+  height: 100%; /* O botão ocupa 100% da altura do container pai */
+  background-image: linear-gradient(
+    45deg,
+    #7f00ff,
+    #e100ff
+  ); /* Aplica um gradiente diagonal roxo-rosa ao botão */
+}
+
+#imagem-sobre-mim {
+  /* Nenhuma propriedade específica aqui, mas o ID pode ser estilizado futuramente */
+}
+
+#minha-foto {
+  width: 100%; /* Garante que a imagem ocupe 100% da largura do container */
+}
+
+#minhas-habilidades {
+  text-align: center; /* Centraliza o texto */
+  display: flex; /* Aplica layout flexível */
+  flex-direction: column; /* Organiza os elementos em coluna */
+  margin-left: auto; /* Centraliza horizontalmente */
+  margin-right: auto; /* Centraliza horizontalmente */
+  color: #fff; /* Define a cor do texto como branca */
+  width: 60%; /* Define uma largura fixa de 60% da tela */
+  height: 100vh; /* Ocupa toda a altura da viewport */
+  margin-bottom: 20%; /* Adiciona um espaçamento inferior de 20% */
+  gap: 2rem; /* Adiciona espaçamento entre os elementos */
+}
+
+#titulo-minhas-habilidades {
+  font-size: 3rem; /* Define um tamanho de fonte grande para o título */
+}
+
+#lista-habilidades {
+  display: flex; /* Aplica layout flexível */
+  margin: 0 auto; /* Centraliza a lista horizontalmente */
+  gap: 4rem; /* Adiciona espaçamento entre os itens */
+}
+
+.habilidades {
+  background-color: rgb(
+    14,
+    14,
+    16
+  ); /* Define um fundo quase preto para os blocos de habilidades */
+  width: 50%; /* Cada bloco ocupa 50% da largura do container pai */
+  height: 100%; /* Cada bloco ocupa toda a altura disponível */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  border-top: 10px solid; /* Adiciona uma borda superior com 10px de espessura */
+  border-image-slice: 1; /* Define o corte do gradiente da borda */
+  border-image-source: linear-gradient(
+    45deg,
+    red,
+    blue
+  ); /* Aplica um gradiente vermelho-azul à borda superior */
+}
+
+.habilidades p {
+  height: 40%; /* O texto ocupa 40% da altura do bloco */
+  text-align: start; /* Alinha o texto à esquerda */
+  padding-left: 20px; /* Adiciona espaçamento à esquerda do texto */
+  padding-right: 20px; /* Adiciona espaçamento à direita do texto */
+  word-spacing: 0.1cap; /* Define espaçamento entre as palavras */
+}
+
+.barra-porcentagem {
+  width: 100%; /* A barra ocupa toda a largura do container */
+  display: flex; /* Aplica layout flexível */
+  justify-content: center; /* Centraliza horizontalmente os itens dentro da barra */
+  align-items: center; /* Centraliza verticalmente os itens dentro da barra */
+  gap: 2rem; /* Adiciona espaçamento entre os itens */
+  height: 10%; /* Define a altura da barra como 10% do container */
+  text-align: start; /* Alinha os textos à esquerda */
+}
+
+.barra-porcentagem strong {
+  position: relative; /* Permite ajustar a posição do texto relativo ao seu container */
+  left: 1rem; /* Move o texto ligeiramente para a direita */
+}
+
+.barra-porcentagem div {
+  width: 90%; /* Define a largura da barra principal como 90% do container */
+  height: 0.5rem; /* Define a altura da barra como 0.5rem */
+  background-color: white; /* Define o fundo da barra como branco */
+}
+
+.barra-porcentagem div div {
+  width: 80%; /* Define a largura da barra interna como 80% da barra principal */
+  height: 100%; /* A barra interna ocupa 100% da altura da barra principal */
+  background-color: #640d5f; /* Define a cor da barra interna como rosa escuro */
+}
+
+.img-habilidades {
+  width: 50px; /* Define a largura das imagens das habilidades */
+  height: 50px; /* Define a altura das imagens das habilidades */
+}
+
+#meus-projetos {
+  text-align: center; /* Centraliza o texto */
+  display: flex; /* Aplica layout flexível */
+  flex-direction: column; /* Organiza os elementos em coluna */
+  margin-left: auto; /* Centraliza horizontalmente */
+  margin-right: auto; /* Centraliza horizontalmente */
+  color: #fff; /* Define a cor do texto como branca */
+  width: 60%; /* Define uma largura fixa de 60% da tela */
+  height: 100vh; /* Ocupa toda a altura da viewport */
+  margin-bottom: 20%; /* Adiciona um espaçamento inferior de 20% */
+}
+
+#meus-projetos h1 {
+  font-size: 3rem; /* Define um tamanho de fonte grande para o título */
+}
+
+#meus-projetos ul {
+  display: flex; /* Aplica layout flexível */
+  height: 100%; /* Define a altura da lista como 100% do container pai */
+  gap: 4rem; /* Adiciona espaçamento entre os itens */
+}
+
+#meus-projetos li {
+  display: flex; /* Aplica layout flexível */
+  flex-direction: column; /* Organiza os itens em coluna */
+  width: 50%; /* Cada item ocupa 50% da largura do container pai */
+  height: 100%; /* Cada item ocupa toda a altura disponível */
+  margin: 0 auto; /* Centraliza os itens horizontalmente */
+  background-color: rgb(
+    14,
+    14,
+    16
+  ); /* Define um fundo quase preto para os itens */
+}
+
+#meus-projetos li p {
+  text-align: start; /* Alinha o texto à esquerda */
+  padding-left: 20px; /* Adiciona espaçamento à esquerda do texto */
+  padding-right: 20px; /* Adiciona espaçamento à direita do texto */
+  word-spacing: 0.1cap; /* Define espaçamento entre as palavras */
+}
+
+@media only screen and (max-width: 1024px) {
+  section {
+    padding-top: 5.8rem;
+  }
+
+  #sobre-mim {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100vh;
+  }
+
+  #texto {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+  }
+
+  #minha-foto {
+    width: 100%;
+    height: 60%;
+  }
+
+  #minhas-habilidades {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+  }
+
+  #lista-habilidades {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+
+    width: 80%;
+    height: 100%;
+  }
+  .habilidades {
+    width: 90%;
+    height: 100%;
+  }
+
+  #meus-projetos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #meus-projetos ul {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #meus-projetos li {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #meus-projetos li p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  #menu {
+    display: none;
+  }
+
+  #hamburguer {
+    display: flex;
+  }
+
+  section {
+    padding-top: 5.8rem;
+  }
+
+  #sobre-mim {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100vh;
+  }
+
+  #texto {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+  }
+
+  #minha-foto {
+    width: 100%;
+    height: 60%;
+  }
+
+  #minhas-habilidades {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 170vh;
+  }
+
+  #lista-habilidades {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+
+    width: 80%;
+    height: 100%;
+  }
+  .habilidades {
+    width: 90%;
+    height: 100%;
+  }
+
+  #meus-projetos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 150vh;
+  }
+
+  #meus-projetos ul {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #meus-projetos li {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #meus-projetos li p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-height: 600px) and (min-height: 0px) {
+  #menu {
+    display: none;
+  }
+
+  #hamburguer {
+    display: flex;
+  }
+
+  section {
+    padding-top: 5.8rem;
+  }
+
+  #sobre-mim {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 150vh;
+  }
+
+  #texto {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+  }
+
+  #minha-foto {
+    width: 100%;
+    height: 60%;
+  }
+
+  #minhas-habilidades {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 250vh;
+  }
+
+  #lista-habilidades {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+
+    width: 80%;
+    height: 100%;
+  }
+  .habilidades {
+    width: 90%;
+    height: 100%;
+  }
+
+  #meus-projetos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #meus-projetos ul {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #meus-projetos li {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #meus-projetos li p {
+    font-size: 1rem;
+  }
+}
